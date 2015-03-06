@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @timesheet.date %>
+</p>
+
+<p>
+  <strong>Leaving early:</strong>
+  <%= @timesheet.leaving_early %>
+</p>
+
+<p>
+  <strong>Official shift:</strong>
+  <%= @timesheet.official_shift %>
+</p>
+
+<p>
+  <strong>Checkin:</strong>
+  <%= @timesheet.checkin %>
+</p>
+
+<p>
+  <strong>Checkin machine:</strong>
+  <%= @timesheet.checkin_machine %>
+</p>
+
+<p>
+  <strong>Checkin motive:</strong>
+  <%= @timesheet.checkin_motive %>
+</p>
+
+<p>
+  <strong>Checkout:</strong>
+  <%= @timesheet.checkout %>
+</p>
+
+<p>
+  <strong>Checkout machine:</strong>
+  <%= @timesheet.checkout_machine %>
+</p>
+
+<p>
+  <strong>Checkout motive:</strong>
+  <%= @timesheet.checkout_motive %>
+</p>
+
+<%= link_to 'Edit', edit_timesheet_path(@timesheet) %> |
+<%= link_to 'Back', timesheets_path %>

@@ -1,0 +1,33 @@
+<h1>Listing oil_exchanges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Km</th>
+      <th>Amount</th>
+      <th>Price</th>
+      <th>Observation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @oil_exchanges.each do |oil_exchange| %>
+      <tr>
+        <td><%= oil_exchange.date %></td>
+        <td><%= oil_exchange.KM %></td>
+        <td><%= oil_exchange.amount %></td>
+        <td><%= oil_exchange.price %></td>
+        <td><%= oil_exchange.observation %></td>
+        <td><%= link_to 'Show', oil_exchange %></td>
+        <td><%= link_to 'Edit', edit_oil_exchange_path(oil_exchange) %></td>
+        <td><%= link_to 'Destroy', oil_exchange, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Oil exchange', new_oil_exchange_path %>

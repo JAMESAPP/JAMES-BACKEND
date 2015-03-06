@@ -1,0 +1,53 @@
+<%= form_for(@timesheet) do |f| %>
+  <% if @timesheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@timesheet.errors.count, "error") %> prohibited this timesheet from being saved:</h2>
+
+      <ul>
+      <% @timesheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :leaving_early %><br>
+    <%= f.time_select :leaving_early %>
+  </div>
+  <div class="field">
+    <%= f.label :official_shift %><br>
+    <%= f.check_box :official_shift %>
+  </div>
+  <div class="field">
+    <%= f.label :checkin %><br>
+    <%= f.time_select :checkin %>
+  </div>
+  <div class="field">
+    <%= f.label :checkin_machine %><br>
+    <%= f.text_field :checkin_machine %>
+  </div>
+  <div class="field">
+    <%= f.label :checkin_motive %><br>
+    <%= f.text_field :checkin_motive %>
+  </div>
+  <div class="field">
+    <%= f.label :checkout %><br>
+    <%= f.time_select :checkout %>
+  </div>
+  <div class="field">
+    <%= f.label :checkout_machine %><br>
+    <%= f.text_field :checkout_machine %>
+  </div>
+  <div class="field">
+    <%= f.label :checkout_motive %><br>
+    <%= f.text_field :checkout_motive %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

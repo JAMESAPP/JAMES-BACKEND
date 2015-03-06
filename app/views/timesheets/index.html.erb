@@ -1,0 +1,41 @@
+<h1>Listing timesheets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Leaving early</th>
+      <th>Official shift</th>
+      <th>Checkin</th>
+      <th>Checkin machine</th>
+      <th>Checkin motive</th>
+      <th>Checkout</th>
+      <th>Checkout machine</th>
+      <th>Checkout motive</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @timesheets.each do |timesheet| %>
+      <tr>
+        <td><%= timesheet.date %></td>
+        <td><%= timesheet.leaving_early %></td>
+        <td><%= timesheet.official_shift %></td>
+        <td><%= timesheet.checkin %></td>
+        <td><%= timesheet.checkin_machine %></td>
+        <td><%= timesheet.checkin_motive %></td>
+        <td><%= timesheet.checkout %></td>
+        <td><%= timesheet.checkout_machine %></td>
+        <td><%= timesheet.checkout_motive %></td>
+        <td><%= link_to 'Show', timesheet %></td>
+        <td><%= link_to 'Edit', edit_timesheet_path(timesheet) %></td>
+        <td><%= link_to 'Destroy', timesheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Timesheet', new_timesheet_path %>

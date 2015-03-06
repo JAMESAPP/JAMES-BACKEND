@@ -14,9 +14,6 @@ echo "Initial scaffold for james"
 echo "creating entities"
 
 rails generate scaffold Expense date:datetime amount:float accountFrom:string accountTo:string memo:string
-rails generate scaffold Food name:string calories:float food_group:string
-rails generate scaffold Meal date:datetime meal:string food:string
-rails generate scaffold Workout date:datetime
 rails generate scaffold Refuel date:datetime KM:float amount:float price:float gas_station:string observation:string
 rails generate scaffold OilExchange date:datetime KM:float amount:float price:float observation:string
 rails generate scaffold Timesheet date:datetime leaving_early:time official_shift:boolean checkin:time checkin_machine:string checkin_motive:string checkout:time checkout_machine:string checkout_motive:string

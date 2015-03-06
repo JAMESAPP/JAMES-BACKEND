@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-03-05 00:11:49
+  leaving_early: 2015-03-05 00:11:49
+  official_shift: false
+  checkin: 2015-03-05 00:11:49
+  checkin_machine: MyString
+  checkin_motive: MyString
+  checkout: 2015-03-05 00:11:49
+  checkout_machine: MyString
+  checkout_motive: MyString
+
+two:
+  date: 2015-03-05 00:11:49
+  leaving_early: 2015-03-05 00:11:49
+  official_shift: false
+  checkin: 2015-03-05 00:11:49
+  checkin_machine: MyString
+  checkin_motive: MyString
+  checkout: 2015-03-05 00:11:49
+  checkout_machine: MyString
+  checkout_motive: MyString

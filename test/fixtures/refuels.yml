@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-03-05 00:11:47
+  KM: 1.5
+  amount: 1.5
+  price: 1.5
+  gas_station: MyString
+  observation: MyString
+
+two:
+  date: 2015-03-05 00:11:47
+  KM: 1.5
+  amount: 1.5
+  price: 1.5
+  gas_station: MyString
+  observation: MyString

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @refuel.date %>
+</p>
+
+<p>
+  <strong>Km:</strong>
+  <%= @refuel.KM %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @refuel.amount %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @refuel.price %>
+</p>
+
+<p>
+  <strong>Gas station:</strong>
+  <%= @refuel.gas_station %>
+</p>
+
+<p>
+  <strong>Observation:</strong>
+  <%= @refuel.observation %>
+</p>
+
+<%= link_to 'Edit', edit_refuel_path(@refuel) %> |
+<%= link_to 'Back', refuels_path %>

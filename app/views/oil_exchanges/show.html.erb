@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @oil_exchange.date %>
+</p>
+
+<p>
+  <strong>Km:</strong>
+  <%= @oil_exchange.KM %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @oil_exchange.amount %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @oil_exchange.price %>
+</p>
+
+<p>
+  <strong>Observation:</strong>
+  <%= @oil_exchange.observation %>
+</p>
+
+<%= link_to 'Edit', edit_oil_exchange_path(@oil_exchange) %> |
+<%= link_to 'Back', oil_exchanges_path %>
