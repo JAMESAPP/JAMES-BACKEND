@@ -61,6 +61,17 @@ class ExpensesController < ApplicationController
     end
   end
 
+  # Import data into gnucash program using the python's bind
+  def import_gnucash
+
+    importer = "/home/jefferson/universal/projects/gnucash-qif-import/import.py"
+    gnucash_file = "/home/jefferson/universal/documents/financial/gnucash/personal_gnucash.gucash"
+    # TODO export from sqlite to qif file format to import into gnucash data file
+    qif_file = ""
+    python_cmd = Escape.shell_command(['python', importer, "-v", "-f", gnucash_file, qif_file]).to_s
+    system python_cmd
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_expense
