@@ -65,7 +65,7 @@ class ExpensesController < ApplicationController
   def import_gnucash
 
     importer = "/home/jefferson/universal/projects/gnucash-qif-import/import.py"
-    gnucash_file = "/home/jefferson/universal/documents/financial/gnucash/personal_gnucash.gucash"
+    gnucash_file = "/home/jefferson/universal/documents/financial/gnucash/personal_gnucash.gnucash"
     # TODO export from sqlite to qif file format to import into gnucash data file
     qif_file = ""
     python_cmd = Escape.shell_command(['python', importer, "-v", "-f", gnucash_file, qif_file]).to_s
